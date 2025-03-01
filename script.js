@@ -37,7 +37,7 @@ function sendEmail() {
         processedEmail = "6305243350@vtext.com"
         processedName = "Jeremy"
     } else {
-        processedEmail = "6305243350@vtext.com"
+        processedEmail = "3098319337@vtext.com"
         processedName = "Natalie"
     }
 
@@ -50,7 +50,7 @@ function sendEmail() {
         time : processedTime
     }
 
-    //emailjs.send("service_5zq0ltq", "template_wleghe8", params).then(alert("mail sent successfully"))
+    emailjs.send("service_5zq0ltq", "template_wleghe8", params).then(alert("mail sent successfully"))
 }
 
 function validate() {
