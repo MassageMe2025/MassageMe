@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Arial';
 }
 
 html {
@@ -12,31 +12,37 @@ body {
     display: flex;
     background: #f2f6fb;
     min-height: 100vh;
-    padding: 0 10px;
+    padding: 50px;
     align-items: center;
     justify-content: center;
 }
 
-.disable-select {
+.disable_select {
     -webkit-user-select: none;  
     -moz-user-select: none;    
     -ms-user-select: none;      
     user-select: none;
-  }
+}
+
+.massage_container {
+}
 
 .massage_grid {
     display: grid;
-}
-
-.divv {
-    width: 100px;
-    height: 100px;
 }
 
 .massage_hidden_input {
     width: 0px;
     height: 0px;
     opacity: 0;
+}
+
+.header * {
+    text-align: center;
+}
+
+.inline_container {
+    display: inline-block;
 }
 
 .selection_chip * {
@@ -47,7 +53,6 @@ body {
     background: #ffffff;
     border: solid 1px #191919;
     border-radius: 5px;
-    width: 500px;
 }
 
 .selection_chip:hover * {
@@ -72,11 +77,24 @@ body {
     padding: 25px;
 }
 
-.time_input {
-    padding: 15px;
-    background: #dedede;
-    border: none;
-    border-radius: 5px;
+.appointment_container {
+    display: flex;
+}
+
+.appointment_container > div {
+}
+
+.therapist_container {
+    margin-right: 25px;
+}
+
+.customer_container {
+    margin-bottom: 100px;
+}
+
+.customer_form {
+    display: flex;
+    margin-top: 25px;
 }
 
 .input {
@@ -84,6 +102,9 @@ body {
     background: #dedede;
     border: none;
     border-radius: 5px;
+    height: 25px;
+    width: 125px;
+    margin-right: 15px;
 }
 
 .submit_button {

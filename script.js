@@ -10,11 +10,12 @@ function sendEmail() {
     var month = date[1]; var day = date[2]
     var hour = time[0]; var min = time[1]
 
-    if(validate() == true) {
+    if(!validate()) {
+        alert("Required field(s) are empty")
         return
     }
 
-    /*processedDate = month + "/" + day
+    processedDate = month + "/" + day
 
     if (hour > 0 && hour <= 12) {
         processedTime = "" + hour;
@@ -47,7 +48,7 @@ function sendEmail() {
         customer : document.getElementById("first_name").value + " " + document.getElementById("last_name").value,
         date : processedDate,
         time : processedTime
-    }*/
+    }
 
     //emailjs.send("service_5zq0ltq", "template_wleghe8", params).then(alert("mail sent successfully"))
 }
@@ -58,7 +59,6 @@ function validate() {
         document.getElementById("first_name").value == "" ||
         document.getElementById("last_name").value == ""
     ) {
-        alert("Required field(s) are empty")
         return false
     }
     return true

@@ -20,8 +20,9 @@
     <body>
         <main>
             <div class="massage_grid">
-                <div class="schedule_header">
+                <div class="header">
                     <h1>Schedule a Massage</h1>
+                    <br>
                     <p>Experience a relaxing massage with one of our talented massage therapists</p>
                 </div>
                 <div class="massage_container disable-select">
@@ -60,43 +61,41 @@
                             <p class="massage_description">Release unwanted tension in the glutes and pelvis</p>
                         </div>
                     </label>
-                    <label class="selection_chip" for="marie_massage">
-                        <input class="massage_hidden_input" id="marie_massage" type="radio" value="" name="massage">
-                        <div class="container">
-                            <h5 class="chip_title">Marie/Hank Massage</h5>
-                            <p class="massage_description">IYKYK...</p>
-                        </div>
-                    </label>
                 </div>
+                <br><br>
                 <div class="schedule_header">
                     <h1>Select Appointment</h1>
+                    <br>
                 </div>
-                <div class="appointment_container disable-select">
-                    <label class="selection_chip" for="jeremy">
-                        <input class="massage_hidden_input" id="jeremy" type="radio" name="therapist" checked>
-                        <div class="container">
-                            <h5 class="chip_title">Jeremy Robinson</h5>
-                        </div>
-                    </label>
-                    <label class="selection_chip" for="natalie">
-                        <input class="massage_hidden_input" id="natalie" type="radio" name="therapist">
-                        <div class="container">
-                            <h5 class="chip_title">Natalie Johnson</h5>
-                        </div>
-                    </label>
-                    <!--<div class="massage_scheduler">
-                        <input type= "date" autocomplete="off" class="input" required>
-                        <input type= "time" autocomplete="off" class="input" required>
-                    </div>-->
-                </div>
-                <div class="customer_container">
-                    <form>
-                        <input type= "date" autocomplete="off" class="input" id="date" required>
-                        <input type= "time" autocomplete="off" class="input" id="time" required>
-                        <input class="input" id="first_name" required>
-                        <input class="input" id="last_name" required>
-                        <input class="submit_button" type="button" value="Submit" onclick="sendEmail()">
-                    </form>
+                <div class="appointment_container">
+                    <div class="therapist_container disable_select inline_container">
+                        <h3>Select Therapist</h3>
+                        <label class="selection_chip" for="jeremy">
+                            <input class="massage_hidden_input" id="jeremy" type="radio" name="therapist" checked>
+                            <div class="container">
+                                <h5 class="chip_title">Jeremy Robinson</h5>
+                            </div>
+                        </label>
+                        <label class="selection_chip" for="natalie">
+                            <input class="massage_hidden_input" id="natalie" type="radio" name="therapist">
+                            <div class="container">
+                                <h5 class="chip_title">Natalie Johnson</h5>
+                            </div>
+                        </label>
+                        <br>
+                        <input class="input" type="date" autocomplete="off" id="date">
+                        <input class="input" type="time" autocomplete="off" id="time">
+                    </div>
+                    <div class="customer_container inline_container">
+                        <h3>Your Information</h3>
+                        <form>
+                            <div class="customer_form">
+                                <input class="input" id="first_name" placeholder="First Name">
+                                <input class="input" id="last_name" placeholder="Last Name">
+                                <input class="submit_button" type="button" value="Submit" onclick="sendEmail()">
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </main>
