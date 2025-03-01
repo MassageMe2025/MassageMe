@@ -110,8 +110,6 @@ body {
     width: inherit
 }
 
-
-
 .customer_form {
     display: flex;
     margin-top: 25px;
@@ -126,7 +124,7 @@ body {
     height: 55px;
     padding-left: 1vw;
     padding-right: 1vw;
-    font-size: 1.25rem;
+    font-size: 1rem;
 }
 
 .submit_button {

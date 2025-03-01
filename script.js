@@ -36,9 +36,15 @@ function sendEmail() {
     if(document.querySelector('input[name="therapist"]:checked').nextElementSibling.firstChild.nextElementSibling.innerHTML == "Jeremy Robinson") {
         processedEmail = "6305243350@vtext.com"
         processedName = "Jeremy"
-    } else {
+    } else if(document.querySelector('input[name="therapist"]:checked').nextElementSibling.firstChild.nextElementSibling.innerHTML == "Natalie Johnson") {
         processedEmail = "3098319337@vtext.com"
         processedName = "Natalie"
+    } else if(document.querySelector('input[name="therapist"]:checked').nextElementSibling.firstChild.nextElementSibling.innerHTML == "Gwen Berenyi") {
+        processedEmail = "6306319713@vtext.com"
+        processedName = "Gwen"
+    } else {
+       processedEmail = "4695703262@txt.att.net"
+       processedName = "Rashid"
     }
 
     let params = {
