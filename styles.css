@@ -12,7 +12,7 @@ body {
     background: #f2f6fb;
     min-height: 100vh;
     padding: 2.5%;
-    align-items: center;
+    /*align-items: center;*/
     justify-content: center;
 }
 
@@ -102,6 +102,10 @@ body {
     margin-right: 25px;
 }
 
+.select_therapist_container .container {
+    padding: 7%;
+}
+
 .date_time_container {
     width: inherit
 }
@@ -120,9 +124,11 @@ body {
     border: none;
     border-radius: 5px;
     margin-right: 15px;
-    height: 8.5vh;
+    /*height: 8.5vh;*/
+    height: 55px;
     padding-left: 1vw;
     padding-right: 1vw;
+    font-size: 1rem;
 }
 
 .submit_button {
