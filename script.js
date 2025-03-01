@@ -50,7 +50,7 @@ function sendEmail() {
         time : processedTime
     }
 
-    emailjs.send("service_5zq0ltq", "template_wleghe8", params).then(alert("mail sent successfully"))
+    emailjs.send("service_5zq0ltq", "template_wleghe8", params).then(alert("Appointment booked successfully"))
 }
 
 function validate() {
